@@ -1,0 +1,49 @@
+header#top{
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid black;
+      padding-left: 20px;
+      padding-right: 20px;
+  
+      div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+  
+      div.title{
+        img{
+          height: 10vh;
+          width: 4vw;
+        }
+  
+        h1{
+          font-size: 3.5rem;
+        }
+      }
+  
+      div.login{
+        img{
+          height: 3rem;
+          width: 3rem;
+          filter: invert(35%) sepia(60%) saturate(400%) hue-rotate(160deg);
+        }
+  
+        a{
+          font-size: 2rem;
+          padding-right: 1.5rem;
+          text-decoration: none;
+          color: #4682b4;
+          font-weight: bold;
+        }
+      }
+  
+  
+    }
+  }
+  
