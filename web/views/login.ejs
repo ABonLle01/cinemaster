@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs', {title: head_title}) %>
+</head>
+<body>
+    
+    <main id="login">
+        <form action="/loged" method="post">
+
+            <h2>Iniciar Sesión</h2>
+            <div class="campos">
+                <label for="username">Nombre de usuario</label><input type="text" name="username" id="username">
+            </div>
+            <div class="campos">
+                <label for="password">Contraseña</label><input type="password" name="password" id="password">
+            </div>
+
+            <div class="arriba">
+                <label class="chk"><input type="checkbox" name="check" id="check">Recuérdame</label>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="abajo">
+                <button>Acceder</button>
+                <p>¿Aún no tienes cuenta?<a href="#">Regístrate</a></p>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>

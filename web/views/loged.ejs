@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs', {title: head_title}) %>
+</head>
+<body>
+    <header id="top">
+        <%- include('partials/header.ejs', {title: header_title, login: login}) %>
+    </header>
+
+    <div class="contenedor">
+        <main id="peliculas">
+            <%- include('partials/main.ejs', {h1: h1_title, copies: all_copies}) %>
+        </main>
+    
+        <aside>
+            <section id="generos">
+                <%- include('partials/aside/genre.ejs', {h2: h2_genre, genres: all_genres}) %>
+            </section>
+    
+            <section id="año">
+                <%- include('partials/aside/year.ejs', {h2: h2_year, years: all_years}) %>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="inner">
+            <%- include('partials/footer.ejs') %>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<input type="text" placeholder="Buscar">
+<h1><%= h1 %></h1>
+
+<div class="inner">
+
+    <% copies.forEach(copy => { %>
+        <figure>
+            <img src=" <%- copy.image %> " alt=" <%- copy.title %> ">
+            <figcaption><%- copy.title %></figcaption>
+        </figure>
+    <% }) %>
+
+</div>

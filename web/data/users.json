@@ -1,0 +1,190 @@
+[
+  {
+    "username": "cinefilo123",
+    "password": "password123",
+    "copies": [
+      {
+        "id": 1,
+        "image": "https://picsum.photos/800/400?1",
+        "title": "El Origen",
+        "description": "Un ladrón con la habilidad de entrar en los sueños de las personas emprende el robo de su vida al implantar una idea en la mente de un CEO.",
+        "director": "Christopher Nolan",
+        "genre": "Ciencia Ficción",
+        "year": 2010,
+        "status": "Bueno",
+        "format": "Blu-ray"
+      },
+      {
+        "id": 2,
+        "image": "https://picsum.photos/800/400?2",
+        "title": "El Padrino",
+        "description": "El envejecido patriarca de una dinastía del crimen organizado transfiere el control de su imperio a su hijo reacio.",
+        "director": "Francis Ford Coppola",
+        "genre": "Crimen, Drama",
+        "year": 1972,
+        "status": "Bueno",
+        "format": "DVD"
+      },
+      {
+        "id": 3,
+        "image": "https://picsum.photos/800/400?3",
+        "title": "Tiempos Violentos",
+        "description": "Las vidas de dos asesinos a sueldo, un boxeador, la esposa de un gánster y un par de bandidos de restaurante se entrelazan en cuatro historias de violencia y redención.",
+        "director": "Quentin Tarantino",
+        "genre": "Crimen, Drama",
+        "year": 1994,
+        "status": "Perdido",
+        "format": "Digital"
+      },
+      {
+        "id": 4,
+        "image": "https://picsum.photos/800/400?4",
+        "title": "Interestelar",
+        "description": "Un equipo de exploradores viaja a través de un agujero de gusano en el espacio en un intento de asegurar la supervivencia de la humanidad.",
+        "director": "Christopher Nolan",
+        "genre": "Ciencia Ficción, Aventura",
+        "year": 2014,
+        "status": "Bueno",
+        "format": "Blu-ray"
+      },
+      {
+        "id": 5,
+        "image": "https://picsum.photos/800/400?5",
+        "title": "Sueños de Libertad",
+        "description": "Dos hombres encarcelados desarrollan un vínculo especial a lo largo de los años, encontrando consuelo y redención a través de actos de decencia común.",
+        "director": "Frank Darabont",
+        "genre": "Drama",
+        "year": 1994,
+        "status": "Dañado",
+        "format": "DVD"
+      },
+      {
+        "id": 6,
+        "image": "https://picsum.photos/800/400?6",
+        "title": "La La Land",
+        "description": "Un músico de jazz y una aspirante a actriz intentan mantener su relación mientras luchan por sus sueños en Los Ángeles.",
+        "director": "Damien Chazelle",
+        "genre": "Musical, Romance",
+        "year": 2016,
+        "status": "Bueno",
+        "format": "Blu-ray"
+      },
+      {
+        "id": 7,
+        "image": "https://picsum.photos/800/400?7",
+        "title": "Mad Max: Furia en la carretera",
+        "description": "En un futuro post-apocalíptico, Max se une a un grupo de rebeldes en una misión para escapar de un tiránico dictador.",
+        "director": "George Miller",
+        "genre": "Acción, Ciencia Ficción",
+        "year": 2015,
+        "status": "Bueno",
+        "format": "Digital"
+      },
+      {
+        "id": 8,
+        "image": "https://picsum.photos/800/400?8",
+        "title": "Avengers: Endgame",
+        "description": "Los Vengadores deben hacer todo lo posible para revertir los daños causados por Thanos en la lucha por el control del universo.",
+        "director": "Anthony Russo, Joe Russo",
+        "genre": "Acción, Ciencia Ficción",
+        "year": 2019,
+        "status": "Bueno",
+        "format": "Blu-ray"
+      }
+    ]
+  },
+  {
+    "username": "moviebuff2022",
+    "password": "securePass456",
+    "copies": [
+      {
+        "id": 9,
+        "image": "https://picsum.photos/800/400?9",
+        "title": "Matrix",
+        "description": "Un hacker informático descubre la verdadera naturaleza de su realidad y su papel en la guerra contra sus controladores.",
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "genre": "Ciencia Ficción, Acción",
+        "year": 1999,
+        "status": "Bueno",
+        "format": "Blu-ray"
+      },
+      {
+        "id": 10,
+        "image": "https://picsum.photos/800/400?10",
+        "title": "El Club de la Pelea",
+        "description": "Un oficinista insomne y un vendedor de jabón forman un club secreto de peleas que se sale de control.",
+        "director": "David Fincher",
+        "genre": "Drama, Suspenso",
+        "year": 1999,
+        "status": "Bueno",
+        "format": "DVD"
+      },
+      {
+        "id": 11,
+        "image": "https://picsum.photos/800/400?11",
+        "title": "Gladiador",
+        "description": "Un antiguo general romano busca venganza contra el emperador corrupto que asesinó a su familia y lo envió a la esclavitud.",
+        "director": "Ridley Scott",
+        "genre": "Acción, Drama",
+        "year": 2000,
+        "status": "Bueno",
+        "format": "Digital"
+      },
+      {
+        "id": 12,
+        "image": "https://picsum.photos/800/400?12",
+        "title": "Inception",
+        "description": "Un ladrón con la habilidad de entrar en los sueños de las personas emprende el robo de su vida al implantar una idea en la mente de un CEO.",
+        "director": "Christopher Nolan",
+        "genre": "Ciencia Ficción, Acción",
+        "year": 2010,
+        "status": "Bueno",
+        "format": "Blu-ray"
+      },
+      {
+        "id": 13,
+        "image": "https://picsum.photos/800/400?13",
+        "title": "El Gran Lebowski",
+        "description": "Un hombre común, apodado 'El Nota', se ve involucrado en una serie de eventos relacionados con un caso de secuestro.",
+        "director": "Joel Coen, Ethan Coen",
+        "genre": "Comedia, Crimen",
+        "year": 1998,
+        "status": "Bueno",
+        "format": "DVD"
+      },
+      {
+        "id": 14,
+        "image": "https://picsum.photos/800/400?14",
+        "title": "El Lobo de Wall Street",
+        "description": "La historia de Jordan Belfort, un corredor de bolsa que se embarca en una vida de excesos y crimen en Wall Street.",
+        "director": "Martin Scorsese",
+        "genre": "Drama, Comedia",
+        "year": 2013,
+        "status": "Bueno",
+        "format": "Blu-ray"
+      },
+      {
+        "id": 15,
+        "image": "https://picsum.photos/800/400?15",
+        "title": "Titanic",
+        "description": "Un joven artista se enamora de una mujer de clase alta a bordo del malogrado Titanic.",
+        "director": "James Cameron",
+        "genre": "Drama, Romance",
+        "year": 1997,
+        "status": "Bueno",
+        "format": "DVD"
+      },
+      {
+        "id": 16,
+        "image": "https://picsum.photos/800/400?16",
+        "title": "Spider-Man: No Way Home",
+        "description": "Peter Parker debe enfrentarse a las consecuencias de su identidad secreta revelada, con la ayuda de aliados inesperados.",
+        "director": "Jon Watts",
+        "genre": "Acción, Ciencia Ficción",
+        "year": 2021,
+        "status": "Bueno",
+        "format": "Blu-ray"
+      }
+    ]
+  }
+]
