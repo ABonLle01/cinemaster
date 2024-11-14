@@ -1,17 +1,17 @@
 <nav class="menu">
     <div class="title">
-        <img src="images/claqueta.png" alt="">
-        <h1 class="title"><%= header_title %></h1>                
+        <img src="/images/claqueta.png" alt="">
+        <h1 class="title">CineMaster</h1>                
     </div>
 
     <% if (login == "Iniciar Sesión") { %>
         <div class="login">
-            <img src="images/login_icon.png" alt="">
+            <img src="/images/login_icon.png" alt="">
             <a href="/login" class="login"><%= login %></a>
         </div>
     <% } else { %>
         <div class="login">
-            <img src="images/logout_icon.png" alt="">
+            <img src="/images/logout_icon.png" alt="">
             <a href="/logout" class="logout"><%= login %></a>
         </div>
     <% } %>

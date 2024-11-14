@@ -6,7 +6,7 @@ var credentials = require("../data/userCredentials");
 
 /* home */
 
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next){
   const user = req.session.user;
   console.log(user);
 
@@ -19,28 +19,24 @@ router.get('/', function(req, res, next) {
   if (user) {
     const user_copies = users.getUserCopies(user);  
     res.render('home', { 
-        head_title:   'CineMaster',
-        header_title: 'CineMaster',
+        head_title:   'Home',
         login:        'Cerrar Sesión',
         h1_title:     'Mis copias',
-        h2_genre:     'Géneros',
-        h2_year:      'Año',
         all_copies:   user_copies,
         all_genres:   sortedGenres,
         all_years:    sortedYears,
+        user:         user,
     });
 } else {
     const all_copies = users.getAllCopies();
     res.render('home', { 
-        head_title:   'CineMaster',
-        header_title: 'CineMaster',
+        head_title:   'Home',
         login:        'Iniciar Sesión',
         h1_title:     'Listado de películas',
-        h2_genre:     'Géneros',
-        h2_year:      'Año',
         all_copies:   all_copies,
         all_genres:   sortedGenres,
         all_years:    sortedYears,
+        user:         user,
     });
 }
 });
@@ -51,7 +47,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/login', function(req, res){
   res.render('login', {
-    head_title:   'CineMaster - Login',
+    head_title: 'Login',
   });
 });
 
@@ -85,11 +81,30 @@ router.post('/loged', function(req, res){
 
 /* logout */
 
-router.get('/logout', function(req, res) {
+router.get('/logout', function(req, res){
   req.session.destroy((error) => {
       if (error) { return res.send('Error al cerrar sesión'); }
       res.redirect('/');
   });
+});
+
+
+
+/* copies */
+
+router.get('/copy/:id', function(req,res){
+  const user = req.session.user;
+  const id = req.params.id;
+    if (user) {
+      const copy = users.getCopiesById(id);  
+      //console.log(copy);
+      res.render('copy', { 
+          head_title:   'Copia',
+          login:        'Cerrar Sesión',
+          copy:         copy,
+      });
+
+    } else { res.redirect('/'); }
 });
 
 

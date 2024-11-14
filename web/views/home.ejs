@@ -6,7 +6,7 @@
 <body>
     
     <header id="top">
-        <%- include('partials/header.ejs', {title: header_title, login: login}) %>
+        <%- include('partials/header.ejs', {login: login}) %>
     </header>
 
     <div class="contenedor">
@@ -16,11 +16,11 @@
     
         <aside>
             <section id="generos">
-                <%- include('partials/aside/genre.ejs', {h2: h2_genre, genres: all_genres}) %>
+                <%- include('partials/aside/genre.ejs', {genres: all_genres}) %>
             </section>
     
             <section id="año">
-                <%- include('partials/aside/year.ejs', {h2: h2_year, years: all_years}) %>
+                <%- include('partials/aside/year.ejs', {years: all_years}) %>
             </section>
         </aside>
     </div>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs', {title: head_title}) %>
+</head>
+<body>
+    
+    <header id="top">
+        <%- include('partials/header.ejs', {login: login}) %>
+    </header>
+
+
+<!--     <div class="copy-container">
+      <div class="inner_back">
+        <% if (copy) { %>
+
+          <form action="#" method="post" enctype="multipart/form-data">
+
+            <div class="contenido">
+
+              <div class="imagen">
+                <img src="<%- copy.image %>" alt="Imagen de la copia">
+                <input type="file" name="imagen" id="imagen">
+              </div>
+
+              <div class="datos">
+                <div class="campo">
+                  <label for="titulo">Título de la película:</label>
+                  <input type="text" name="titulo" id="titulo" value="<%- copy.title %>" disabled>
+                </div>
+                <div class="campo">
+                  <label for="descripcion">Descripción:</label>
+                  <input type="text" name="descripcion" id="descripcion" value="<%- copy.description %>" disabled>
+                </div>
+                <div class="campo">
+                  <label for="director">Director:</label>
+                  <input type="text" name="director" id="director" value="<%- copy.director %>" disabled>
+                </div>
+                <div class="campo">
+                  <label for="año">Año:</label>
+                  <input type="text" name="año" id="año" value="<%- copy.year %>" disabled>
+                </div>
+                <div class="campo">
+                  <label for="genero">Género/s:</label>
+                  <input type="text" name="genero" id="genero" value="<%- copy.genre %>" disabled>
+                </div>
+                <div class="campo">
+                  <label for="estado">Estado:</label>
+                  <input type="text" name="estado" id="estado" value="<%- copy.status %>" disabled>
+                </div>
+                <div class="campo">
+                  <label for="formato">Formato:</label>
+                  <input type="text" name="formato" id="formato" value="<%- copy.format %>" disabled>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="botones">
+              <button disabled>Guardar cambios</button>
+              <a href="/">Volver</a>
+            </div>
+          </form>
+          
+        <% } else { %>
+          <p>La copia no está disponible.</p>
+        <% } %>
+      </div>    
+    </div> -->
+
+
+
+  <div class="copy-container">
+    <div class="inner_back">
+      <% if (copy) { %>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div class="contenido">
+
+            <div class="imagen">
+              <img src="<%- copy.image %>" alt="Imagen de la copia">
+              <input type="file" name="imagen" id="imagen">
+            </div>
+
+            <div class="datos">
+              <div class="campo">
+                <label for="titulo">Título de la película:</label>
+                <input type="text" name="titulo" id="titulo" value="<%- copy.title %>" disabled>
+              </div>
+              <div class="campo">
+                <label for="descripcion">Descripción:</label>
+                <textarea name="descripcion" id="descripcion" disabled><%- copy.description %></textarea>
+                <!-- <input type="text" name="descripcion" id="descripcion" value="<%- copy.description %>" disabled> -->
+              </div>
+              <div class="campo">
+                <label for="director">Director:</label>
+                <input type="text" name="director" id="director" value="<%- copy.director %>" disabled>
+              </div>
+              <div class="campo">
+                <label for="año">Año:</label>
+                <input type="text" name="año" id="año" value="<%- copy.year %>" disabled>
+              </div>
+              <div class="campo">
+                <label for="genero">Género/s:</label>
+                <input type="text" name="genero" id="genero" value="<%- copy.genre %>" disabled>
+              </div>
+              <div class="campo">
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" id="estado" value="<%- copy.status %>" disabled>
+              </div>
+              <div class="campo">
+                <label for="formato">Formato:</label>
+                <input type="text" name="formato" id="formato" value="<%- copy.format %>" disabled>
+              </div>
+            </div>
+          </div>
+
+          <div class="botones">
+            <button disabled>Guardar cambios</button>
+            <a href="/">Volver</a>
+          </div>
+        </form>
+      <% } else { %>
+        <p>La copia no está disponible.</p>
+      <% } %>
+    </div>
+  </div>
+
+
+
+    <footer>
+      <div class="inner">
+          <%- include('partials/footer.ejs') %>
+      </div>
+    </footer>
+
+</body>
+</html>

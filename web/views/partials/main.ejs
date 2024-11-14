@@ -7,6 +7,9 @@
         <figure>
             <img src=" <%- copy.image %> " alt=" <%- copy.title %> ">
             <figcaption><%- copy.title %></figcaption>
+            <% if (user) { %>
+                <a href="/copy/<%- copy.id %>">Ver más información</a> 
+            <% } %>
         </figure>
     <% }) %>
 

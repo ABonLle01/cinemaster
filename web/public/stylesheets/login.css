@@ -45,18 +45,8 @@ main#login{
         }
   
         &.arriba{
-  
-          *{
-            font-size: 1.5rem;
-          }
-          
-  
-          label.chk{
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-  
-          }
+          justify-content: flex-end;
+          font-size: 1.5rem;
   
         }
       

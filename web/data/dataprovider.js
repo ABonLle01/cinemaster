@@ -31,6 +31,10 @@ function getUserCopies(username) {
     return user.copies;
 }
 
+function getCopiesById(id) {
+    return users.flatMap(user => user.copies).find(copy => copy.id === Number(id));
+}
+
 function getCopiesByGenre(genre) {
     return users.flatMap(user => user.copies).filter(copy => copy.genre.includes(genre)); //se utiliza 'includes' porque una copia puede tener varios géneros
 }
@@ -42,5 +46,5 @@ function getCopiesByYear(year) {
 module.exports = { 
     getAllUsers, getAllCopies, getAllGenres, getAllYears, 
     getUserCopies,
-    getCopiesByGenre, getCopiesByYear,  
+    getCopiesById, getCopiesByGenre, getCopiesByYear,  
 };
